@@ -1,0 +1,14 @@
+name: Status Check
+on:
+  push:
+    branches:
+      - '**'
+      - '!main'
+
+jobs:
+  check1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: something test1
+        run: exit 0
